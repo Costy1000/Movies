@@ -1,5 +1,5 @@
-`<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,29 +7,101 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sarabun|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Aleo:400,700" rel="stylesheet">
     <script type="text/javascript" src="slick/slick.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
 	
 </head>
 <body>
- <div id="header">
-	 <div class="title">
-		 <h1>movies</h1>
+ <div id="genres-top">
+   <div class="content-bar">
+	 <div class="bar1"></div> 
+	 <div class="bar2"></div>
+	  <div class="bar3"></div> 
+	</div>
+	<div class="content-image">
+	 <img src="assets/movie2.png"  alt="movie2">
+	</div>
+	<div class="search">
+		<i class="fa fa-search"></i>
+	</div>
+  </div>
+  <div id="black-genres" class="black-genres">
+    <span class="close">&times;</span>
+   <div class="black-button">
+	<button  href=".tabel1">Aventura</button>
+	<button  href=".tabel2"> Actiune</button> 
+	<button href= ".tabel3">Drama</button> 
+	<button href= ".tabel4">Horror</button> 
+	<button href= ".tabel5">Documentare</button>
+	<button href= ".tabel6">Thriller</button>
+  </div>
+ </div>
+ <div id="black-search" class="black-search">
+	 <div class="search-bar">
+		 <input type="text"  placeholder="Cauta recenzile....">
+		 
 	 </div>
+	 <span class="close2">&times;</span>
+ </div>
+
+   
+ <div id="header">
+	
+    <div id="background">
+	 <div class="background-black2"></div>  
+	  <div class="image nothide"><img src="assets/blur.png" alt="blur"   ></div> 
+	  <div class="image"><img  src="assets/blur2.png" alt="blur2" ></div>
+	  <div class="image"><img  src="assets/blur3.png" alt="blur3" ></div> 
+	  <div class="image"><img src="assets/blur8.png" alt="blur8"></div>
+	  <div class="image"><img src="assets/blur9.png" alt= "blur9"></div>
+	  <div class="image"><img src="assets/blur10.png" alt="blur10"></div>
+     </div>
+   
+	 
      <div id="slider">
 		 <div class="wrapper">
-			<div class="panel"><img src="assets/Infinity-War.jpg" alt="iw"></div>
-			<div class="panel"><img src="assets/Redemption.jpg" alt="redemption"></div>
-			<div class="panel"><img src="assets/MI-Fallout.jpg" alt="fallout"></div>
+			<div class="panel show" ><img src="assets/Infinity-War.jpg" alt="iw" ></div>
+			<div class="panel" ><img src="assets/Redemption.jpg" alt="redemption" ></div>
+			<div class="panel " ><img src="assets/MI-Fallout.jpg" alt="fallout" ></div>
 		 </div>
 	   <div class="bar">
 	    <div class="progress-bar"></div>
 	   </div>
 	 </div>
 	 <div id="slider2">
-		 <div class='text'>Toate reveurile</div> 
+		<div class="wrapper-text">
+		  <div class="text"><h4>All reviews</h4></div>
+		   <!----<div class="wrapper-bar">
+			  <div class="input">
+				  <input type="text" id="Input"  onkeyup = "filterFunction()"placeholder="Search">
+				  <i class="fa fa-search"></i>
+				  <div class="search-image" id="search-image">
+					<div class="image-p">
+					  <img src="assets/Room.jpg" alt="Room">
+					  <p>Room</p>
+					</div>
+					<div class="image-p">
+					  <img src="assets/A-Quiet-Place.png" alt="Quiet-Place">
+					  <p>A quiet place</p>
+					</div>
+					<div class="image-p">
+					  <img src="assets/Aquaman.jpg" alt="Aquaman">
+					  <p>Aquaman</p>
+					</div>
+					<div class="image-p">
+					  <img src="assets/A-Star-Is-Born.jpg" alt="A-Star-Is-Born">
+					  <p>A Star is Born</p>
+					</div>
+					
+				  </div>
+			  </div>   
+			  
+		  </div>---->
+		</div>
 		<div class="wrapper2">
 		 
 			<div class="item"><img src="assets/Infinity-War2.jpg" alt="iw"></div>
@@ -45,51 +117,758 @@
 		</div>
 		<div class="left"></div>
 		<div class="right"></div>
-	  </div> 
-	 
-</div>	 
-<div id="genres">
-  <div class="button-left">
-	<ul><li class="adventure">Aventura</li><li class="action">Actiune</li><li class="documentaries">Drama</li>
-	</ul>
-  </div>
- 
-    <img src="assets/movie.png" class="movie" alt="movie">
- 	
-  <div class="button-right">
-	<ul>
-		 <li class="horror">Horror</li>
-	  <li class="thriller">Comedie</li>
-	  <li class="Drama">Thriller</li>
-	</ul>
 	
   </div>
+	</div> 
+ 
+<div id="main">
+<div id="genres">
+  <div class="button-left">
+	<ul><li class="adventure" href=".tabel1">Aventura</li><li class="action" href= ".tabel2">Actiune</li><li class="drama" href=".tabel3">Drama</li>
+	</ul>
+  </div>
+      <img src="assets/movie3.png" class="movie" alt="movie">
+	<img src="assets/movie2.png" class="movie2" alt= "movie">
+  <div class="button-right">
+	<ul><li class="horror" href=".tabel4">Horror</li><li class="documentaries" href=".tabel5">Documentare</li><li class="thriller" href=".tabel6">Thriller</li></ul>
+	
+  </div>
+ </div>
   
+<div id="center">
+ <div class="tabel1">
+  <div class="background-black">
+   <div class="adventure-movies">
+	<div class="image-iw">
+	  <img src="assets/Infinity-War2.jpg" alt="iw" class="iw">
+	  <div class="image-black">
+		  <p class="note">8.5/10</p> 
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button>
+		  <p class="bottom">Avengers: Infinity-War</p>
+	  </div>
+    </div>
+	<div class="image-iw">
+	  <img src="assets/Aquaman.jpg" alt="Aquaman" class="iw" >
+	  <div class="image-black">
+		  <p class="note">7.5/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button>
+		  <p class="bottom">Aquaman</p> 
+		  
+	  </div>
+	</div>
+    <div class="image-iw">
+	  <img src="assets/Black-Panther.png" alt="Black-Panther" class="iw">
+	  <div class="image-black">
+		  <p class="note">7.4/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button>
+		  <p class="bottom">Black-Panther</p>  
+	  </div>
+	</div>
+	<div class="image-iw">
+	  <img src="assets/Ant-Man.jpg" alt="Ant-Man" class="wasp iw">
+	  <div class="image-black">
+		   <p class="note">7.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button>
+		  <p class="bottom">Ant-Man and The Wasp</p>     
+	  </div>
+    </div>
+	<div class="image-iw">
+	  <img src="assets/LOTR.jpg" alt="lotr" class="lotr iw" >
+	   <div class="image-black">
+		  <p class="note">8.8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button>
+		  <p class="bottom">Lord Of The Rings 1</p>       
+	   </div>
+	</div>
+	<div class="image-iw">
+	  <img src="assets/LOTR2.jpg" alt="lotr2" class="iw">
+	  <div class="image-black">
+		  <p class="note">8.7/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button>
+		  <p class="bottom">Lord Of The Rings 1</p>     
+	  </div>
+    </div>
+	<div class="image-iw">
+	  <img src="assets/LOTR3.jpg" alt="lotr3" class="iw">
+	  <div class="image-black">
+		  <p class="note">8.9/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button>
+		  <p class="bottom">Lord Of The Rings 3</p>       
+	  </div>
+		  
+    </div>
+	<div class="image-iw">
+	  <img src="assets/Hobbit.jpg" alt="Hobbit" class="iw">
+	  <div class="image-black">
+		 <p class="note">7.9/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button>
+		  <p class="bottom">Hobbit 1</p>         
+	  </div>
+	</div>
+   </div>
+
+   <div class="adventure-movies2">
+	  <img src="assets/Infinity-War2.jpg" alt="iw" class="iw">
+	  <img src="assets/Aquaman.jpg" alt="Aquaman">
+	  <img src="assets/Black-Panther.png" alt="Black-Panther">
+	  <img src="assets/Ant-Man.jpg" alt="Ant-Man" class="wasp">
+	  <img src="assets/LOTR.jpg" alt="lotr" class="lotr">
+	  <img src="assets/LOTR2.jpg" alt="lotr2">
+	  <img src="assets/LOTR3.jpg" alt="lotr3">
+	  <img src="assets/Hobbit.jpg" alt="Hobbit">
+  </div>
+ </div>
+ </div>
+ <div class="tabel2">
+  <div class="background-black">
+    <div class="action-movies">
+	 <div class="image-iw">
+	  <img src="assets/Fallout.jpg" alt="Fallout" class="iw">
+	  <div class="image-black">
+		  <p class="note">7.8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button>
+		  <p class="bottom">MI-Fallout</p>     
+	  </div> 	
+     </div>
+	 <div class="image-iw">
+	  <img src="assets/Jhon-Wick.jpg" alt="Jhon-Wick" class="iw">
+	  <div class="image-black">
+		  <p class="note">7.3/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button>
+		  <p class="bottom">John Wick</p>        
+	  </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/Jhon-Wick2.jpg" alt="Jhon-Wick2"  class="iw">
+	   <div class="image-black">
+		  <p class="note">7.5/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		    <button>See the review</button>
+		  <p class="bottom">John Wick2</p>         
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	   <img src="assets/F&F-8.jpg" alt="F&F-8" class="ff iw" >
+	   <div class="image-black">
+		  <p class="note">6.7/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Fast and Furious 8</p>       
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/Mad-Max.jpg" alt="Mad-Max" class="mm iw">
+	  <div class="image-black">
+		  <p class="note">8.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Mad Max</p>      
+	  </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/Bad-Boys.jpg" alt="Bad-Boys" class="iw">
+	   <div class="image-black">
+		  <p class="note">6.9/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button> 
+		  <p class="bottom">Bad Boys</p>        
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	   <img src="assets/Die-Hard.jpg" alt="Die-Hard" class="iw">
+	   <div class="image-black">
+		  <p class="note">8.2/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb"  class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Die Hard</p>       
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	   <img src="assets/MI-4.jpg" alt="MI-4" class="iw">
+	   <div class="image-black">
+		  <p class="note">7.4/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button> 
+		  <p class="bottom">MI-4</p>       
+	   </div>
+	 </div>
+    </div>
+    <div class="action-movies2">
+	  <img src="assets/Fallout.jpg" alt="Fallout">
+	  <img src="assets/Jhon-Wick.jpg" alt="Jhon-Wick">
+	  <img src="assets/Jhon-Wick2.jpg" alt="Jhon-Wick2">
+	  <img src="assets/F&F-8.jpg" alt="F&F-8" class="ff">
+	  <img src="assets/Mad-Max.jpg" alt="Mad-Max" class="mm">
+	  <img src="assets/Bad-Boys.jpg" alt="Bad-Boys">
+	  <img src="assets/Die-Hard.jpg" alt="Die-Hard">
+	  <img src="assets/MI-4.jpg" alt="MI-4">
+    </div>
+   </div>
+ </div>
+ <div class="tabel3">
+  <div class="background-black">
+   <div class="drama-movies">
+	 <div class="image-iw">
+	  <img src="assets/Room.jpg" alt="Room" class="iw">
+	  <div class="image-black">
+		  <p class="note">8.2/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Room</p>        
+	  </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/Redemption2.jpg" alt="Redemption" class="iw"  >
+	   <div class="image-black">
+		  <p class="note">9.3/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Shawshank Redemption</p>          
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/A-Ghost-Story.jpg" alt="A-Ghost-Story" class="iw">
+	   <div class="image-black">
+		  <p class="note">6.8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		    <button>See the review</button> 
+		  <p class="bottom">A Ghost Story</p>         
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/First-Man.jpg" alt="First-Man" class="iw">
+	   <div class="image-black">
+		  <p class="note">7.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		   <button>See the review</button> 
+		  <p class="bottom">First Man</p>         
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	  <img src="assets/A-Star-Is-Born.jpg" alt="A-Star-Is-Born.jpg" class="star iw">
+	   <div class="image-black">
+		  <p class="note">8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb"  class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">A Star is Born</p>           
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	   <img src="assets/Bohemian-Rhapsody.jpg" alt="Bohemian-Rhapsody" class="iw" >
+	   <div class="image-black">
+		  <p class="note">8.3/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Bohemian-Rhapsody</p>          
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	    <img src="assets/Rush.jpeg" alt="Rush" class="iw">
+		<div class="image-black">
+		  <p class="note">8.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Rush</p>    	
+		</div>
+	 </div>
+	 <div class="image-iw">
+	   <img src="assets/Shutter-Island.jpg" alt="Shutter-Island"class="iw" >
+	   <div class="image-black">
+		  <p class="note">8.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Shutter Island</p>    	   
+	   </div>
+	 </div>
+   </div>
+   <div class="drama-movies2">
+	  <img src="assets/Room.jpg" alt="Room">
+	  <img src="assets/Redemption2.jpg" alt="Redemption">
+	  <img src="assets/A-Ghost-Story.jpg" alt="A-Ghost-Story">
+	  <img src="assets/First-Man.jpg" alt="First-Man">
+	  <img src="assets/A-Star-Is-Born.jpg" alt="A-Star-Is-Born.jpg" class="star">
+	  <img src="assets/Bohemian-Rhapsody.jpg" alt="Bohemian-Rhapsody">
+	  <img src="assets/Rush.jpeg" alt="Rush">
+	  <img src="assets/Shutter-Island.jpg" alt="Shutter-Island">
+   </div>
+  </div>
+ </div>
+ <div class="tabel4">
+  <div class="background-black">
+    <div class="horror-movies">
+     <div class="image-iw"> 
+	   <img src="assets/The-Conjuring.png" alt="The-Conjuring" class="iw" >
+	   <div class="image-black">
+		  <p class="note">7.5/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Conjuring</p>     
+	   </div>
+     </div>
+	 <div class="image-iw"> 
+	    <img src="assets/The-Conjuring-2.png" alt="The-Conjuring2" class="iw" >
+	    <div class="image-black">
+		  <p class="note">7.4/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Conjuring 2</p>    	
+		</div>
+	 </div>
+	 <div class="image-iw"> 
+	   <img src="assets/A-Quiet-Place.png" alt="A-Quiet-Place" class="iw" >
+	    <div class="image-black">
+		  <p class="note">7.6/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">A quiet Place</p>    		
+		</div>
+	 </div>
+	 <div class="image-iw"> 
+	   <img src="assets/Hereditary.png" alt="Hereditary" class="iw" >
+	   <div class="image-black">
+		  <p class="note">7.3/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Hereditary</p>   
+	   </div>
+	 </div>
+	 <div class="image-iw"> 
+	   <img src="assets/Ouija-2.jpeg" alt="Ouija2" class="ouija2 iw">
+	   <div class="image-black">
+		  <p class="note">6.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Ouija 2</p>    
+	   </div>
+	 </div>
+	 <div class="image-iw"> 
+	   <img src="assets/Atterados.jpg" alt="Atterados" class="iw">
+	   <div class="image-black">
+		  <p class="note">6.6/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb"  class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Atterados</p>   
+	   </div>
+	 </div>
+	 <div class="image-iw"> 
+	   <img src="assets/The-Nun.jpg" alt="The-Nun" class="iw">
+	    <div class="image-black">
+		  <p class="note">5.4/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Nun</p>     
+		</div>
+	 </div> 
+	 <div class="image-iw"> 
+	    <img src="assets/The-Exorcist.jpg" alt="The-Exorcist" class="iw">
+		 <div class="image-black">
+		  <p class="note">8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Exorcist</p>      
+		 </div>
+	 </div>
+    </div>
+    <div class="horror-movies2">
+	  <img src="assets/The-Conjuring.png" alt="The-Conjuring">
+	  <img src="assets/The-Conjuring-2.png" alt="The-Conjuring2">
+	  <img src="assets/A-Quiet-Place.png" alt="A-Quiet-Place">
+	  <img src="assets/Hereditary.png" alt="Hereditary">
+	  <img src="assets/Ouija-2.jpeg" alt="Ouija2" class="Ouija2">
+	  <img src="assets/Atterados.jpg" alt="Atterados">
+	  <img src="assets/The-Nun.jpg" alt="The-Nun">
+	  <img src="assets/The-Exorcist.jpg" alt="The-Exorcist">									 
+    </div>
+	</div>
+ </div>
+ <div class="tabel5">
+  <div class="background-black">
+    <div class="documentaries-movies">
+	 <div class="image-iw">
+	   <img src="assets/They-Shall.jpg" alt="They-Shall" class="iw" >
+	   <div class="image-black">
+		  <p class="note">8.6/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">They Shall Not Grow Old</p>         
+	   </div>
+	 </div>
+	 <div class="image-iw">
+	    <img src="assets/The-Innocent-Man.jpg" alt="Inoccent-Man" class="iw">
+	    <div class="image-black">
+		  <p class="note">7.4/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb"  class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Innocent Man</p>   	
+		</div>
+     </div>
+	 <div class="image-iw">
+	    <img src="assets/Planet-Earth.jpg" alt="Planet-Earth" class="iw" >
+		<div class="image-black">
+		  <p class="note">9.5/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Planet Earth 2</p>   	
+		</div>
+	 </div>	
+     <div class="image-iw">
+	    <img src="assets/Neighbor.jpg" alt="Neighbor" class="iw">
+		<div class="image-black">
+		  <p class="note">8.5/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Won't you be my neighbor?</p>   	 	
+		</div>
+	 </div>	
+	 <div class="image-iw">
+	    <img src="assets/Vietnam-War.jpg" alt="Vietnam" class="war iw">
+		<div class="image-black">
+		  <p class="note">9.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Vietnam War</p>   	 	 
+		</div>
+	 </div>	
+	 <div class="image-iw">
+	    <img src="assets/Cosmos.jpg" alt="Cosmos" class="iw">
+		<div class="image-black">
+		  <p class="note">9.3/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Cosmos</p>   	 
+		</div>
+	 </div>
+	 <div class="image-iw">
+	    <img src="assets/Dynasties.jpg" alt="Dynasties" class="iw" >
+	    <div class="image-black">
+		  <p class="note">9.3/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Dynasties</p>   	
+		</div>
+	 </div>
+	 <div class="image-iw">
+	    <img src="assets/Blackfish.jpg" alt="Blackfish" class="iw">
+	    <div class="image-black">
+		   <p class="note" >8.1/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Blackfish</p>   	
+		</div>
+	 </div>
+    </div>
+    <div class="documentaries-movies2">
+	  <img src="assets/They-Shall.jpg" alt="They-Shall">
+	  <img src="assets/The-Innocent-Man.jpg" alt="Inoccent-Man">
+	  <img src="assets/Planet-Earth.jpg" alt="Planet-Earth">
+	  <img src="assets/Neighbor.jpg" alt="Neighbor">
+	  <img src="assets/Vietnam-War.jpg" alt="Vietnam" class="war">
+	  <img src="assets/Cosmos.jpg" alt="Cosmos">
+	  <img src="assets/Dynasties.jpg" alt="Dynasties">
+	  <img src="assets/Blackfish.jpg" alt="Blackfish">
+    </div>
+   </div>
 </div>
-<img src="assets/Infinity-War.jpg">
-  <img src="assets/Aquaman.jpg">	  
+<div class="tabel6">
+ <div class="background-black">
+  <div class="thriller-movies">
+	<div class="image-iw"> 
+	   <img src="assets/Get-Out.png" alt="Get-Out" class="iw">
+	   <div class="image-black">
+		  <p class="note">7.7/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Get Out</p>   	  
+	   </div>
+    </div>
+	<div class="image-iw"> 
+	   <img src="assets/Inception.png" alt="Inception" class="iw">
+	   <div class="image-black">
+		  <p class="note">8.8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Inception</p>   	   
+	   </div>   
+	</div>
+	<div class="image-iw"> 
+	   <img src="assets/Black-Swan.jpg" alt="Black-Swan" class="iw">
+	   <div class="image-black">
+		  <p class="note">8/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">Black Swan</p>   	   
+	   </div>  
+    </div>
+	<div class="image-iw"> 
+	  <img src="assets/Dark-Knight.jpg" alt="Dark-Knight" class="iw">
+	  <div class="image-black">
+		  <p class="note">9/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Dark Knight</p>   	    
+	  </div>  
+	</div>
+	<div class="image-iw"> 
+	   <img src="assets/Seven.jpg" alt="Seven" class="iw">
+	   <div class="image-black">
+		  <p class="note">8.6/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb" >
+		  <button>See the review</button> 
+		  <p class="bottom">Seven</p>   	   
+	   </div>  
+	</div>
+	<div class="image-iw"> 
+	   <img src="assets/Lambs.jpg" alt="Lambs" class="iw">
+	   <div class="image-black">
+		  <p class="note">8.6/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb" >
+		  <button>See the review</button> 
+		  <p class="bottom">The Silence of the Lambs</p>   	  
+	   </div>
+	</div>
+	<div class="image-iw"> 
+	  <img src="assets/Prestige.jpg" alt="Prestige" class="iw" >
+	  <div class="image-black">
+		  <p class="note">8.5/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb" class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">The Prestige</p>      
+	  </div>
+	</div>
+	<div class="image-iw"> 
+	  <img src="assets/Hours.jpg" alt="Hours" class="iw">
+	   <div class="image-black">
+		  <p class="note">7.6/10</p>
+		  <img src="assets/imdb-logo.png" alt="imdb"  class="imdb">
+		  <button>See the review</button> 
+		  <p class="bottom">127 Hours</p>        
+	   </div>
+	</div> 
+	
+  </div>
+   <div class="thriller-movies2">
+	 <div class="flex">
+	  <img src="assets/Get-Out.png" alt="Get-Out">
+	  <img src="assets/Inception.png" alt="Inception">
+	 </div>
+	 <div class="flex">
+	  <img src="assets/Black-Swan.jpg" alt="Black-Swan">
+	  <img src="assets/Dark-Knight.jpg" alt="Dark-Knight">
+	 </div>
+	 <div class="flex">
+	  <img src="assets/Seven.jpg" alt="Seven">
+	  <img src="assets/Lambs.jpg" alt="Lambs">
+	 </div>
+	 <div class="flex">
+	  <img src="assets/Prestige.jpg" alt="Prestige">
+	  <img src="assets/Hours.jpg" alt="Hours">
+	 </div>	   
+  </div>
+ </div>
+</div>
+ </div>
+ <div class="comments">
+	<div class="part1">
+		<img src="assets/movie2.png" alt="movie2">
+	
+	</div>
+	<div class="part2">
+	   	 <div class="part2-comment"><textarea rows ="4"></textarea></div>
+		 <div class="part2-button"><button>Send</button></div>
+	</div>
+	<div class="part3">
+		<input type="text" placeholder="Name">
+		<input type="text" placeholder="Email">
+		<input type="text" placeholder="Website">
+	</div>
+	<div class="part2-button2"><button>Send</button></div>
+	
+ </div>
+</div>
+<div id="footer">
+	<p>&copy; MoviesReview.ro. All rights reserved</p>
+	
+</div>
+<button id="btn"></button>
+
+
+   
+	
+	
+       
+   
+	
+
+	
+	
+
+
+
+	
+
+	
+
+</body>
+	
 <script>
-	/*window.onscroll = function() {myFunction()};
+	/*=================================================ScrollTop for links====================================================*/
+ function scrollBar(){
+   $('#black-genres button').click(function(){
+	$('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top 
+    }, 400);
+    return false;
+  });
+ 
+ }
+	scrollBar()
+	
+	$(document).ready(function(){
+		$('#slider2').animate({'opacity': '1'}, 3000)
+			$('#slider').animate({'opacity': '1'}, 3000)		
 
-var header = document.getElementById("genres");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-} */
+	});
+	
 	$(window).scroll(function() {
-        if ($(document).scrollTop() > 760) {
-            $('#genres').css({'position': 'fixed', 'top': '0px'});
+         if ($(document).scrollTop() > 720){
+		    
+
+                
+            $('#genres').css({'position': 'fixed', 'top': '0', 'left': '0'});
+		    $('.movie').css({'display': 'none'});
+			   
+		   $('.movie2').css({'display': 'block'});
+			 $('.adventure').css({'color': 'white'});
+			 $('.adventure-movies').css({'padding-top': '15rem'});
+			$('.action').css({'color': 'black'});
+			$('.drama').css({'color': 'black'});
+			 $('.horror').css({'color': 'black'});
+				$('.documentaries').css({'color': 'black'}); 
+		    $('.thriller').css({'color': 'black'}); 
+			}
+		
+		
+		
+		
+          if ($(document).scrollTop() < 720 ) {
+			 $('.movie').css({'display': 'block'});
+		   $('.movie2').css({'display': 'none'});  
+            $('#genres').css({'position': 'static'}); 
+		     $('.adventure').css({'color': 'black'});
+			 
+			  $('.adventure-movies').css({'padding-top': '0'}); 						  
+		  }
+		  if ($(document).scrollTop() > $('.text').offset().top) {
+			   $('.adventure-movies img').animate({'opacity': '1'}, 3000);
+			 
+		  }
+		   if ($(document).scrollTop() > $('.lotr').offset().top)  {
+			    $('.action-movies img').addClass("cc");
+			    $('.image-black').addClass("ccc");
+			    $('.action-movies img').animate({ 'opacity':'1'},3000); 
+			     
+			   
+		   }
+		if ($(document).scrollTop()  > $('.mm').offset().top)	 {
+			    $('.drama-movies img').animate({ 'top': '0px', opacity: "1"},2000);
+			     $('.image-black').addClass("cca");
+		   }
+		if ($(document).scrollTop()  >$('.star').offset().top ) {
+			    $('.horror-movies img').animate({ 'left': '0px', opacity: "1"},3000);
+			     $('.image-black').addClass("ccb");
+		   }
+		if ($(document).scrollTop()  > $('.ouija2').offset().top) {
+			    $('.documentaries-movies img').addClass("aa")
+			     $('.image-black').addClass("ccd");
+			    $('.documentaries-movies img').animate({ 'opacity':'1'},3000); 
+		   }
+			if ($(document).scrollTop()  > $('.war').offset().top) {
+			    $('.thriller-movies img').addClass("bb")
+			    $('.thriller-movies img').animate({ 'opacity':'1'},3000); 
+				$('.image-black').addClass("cce");
+		   }
+		 
+		 if ($(document).scrollTop()  > $('.action-movies').offset().top - 100) {
+            
+			 $('.action').css({'color': 'white'});
+			$('.adventure').css({'color': 'black'});
+		$('.drama').css({'color': 'black'});
+		 $('.horror').css({'color': 'black'});	
+			$('.documentaries').css({'color': 'black'}); 	
+			$('.thriller').css({'color': 'black'}); 
+        }
+		if ($(document).scrollTop() > $('.drama-movies').offset().top - 100) {
+            
+			 $('.drama').css({'color': 'white'});
+			$('.adventure').css({'color': 'black'});
+			$('.action').css({'color': 'black'});
+			  $('.horror').css({'color': 'black'});
+			  	$('.documentaries').css({'color': 'black'});
+			  $('.thriller').css({'color': 'black'});
+			  }
+		
+		 if ($(document).scrollTop()  > $('.horror-movies').offset().top - 100) {
+			 
+              $('.horror').css({'color': 'white'});
+			 $('.drama').css({'color': 'black'});
+			$('.adventure').css({'color': 'black'});
+			$('.action').css({'color': 'black'});
+				$('.documentaries').css({'color': 'black'}); 
+			$('.thriller').css({'color': 'black'});
+			 
+        }
+		if ($(document).scrollTop()  > $('.documentaries-movies').offset().top - 100) {
+			$('.documentaries').css({'color': 'white'});
+			 
+              $('.horror').css({'color': 'black'});
+			$('.drama').css({'color': 'black'});
+			$('.adventure').css({'color': 'black'});
+			$('.action').css({'color': 'black'}); 
+			$('.thriller').css({'color': 'black'});
+			 
+        }
+		if ($(document).scrollTop()  > $('.thriller-movies').offset().top - 100) {
+			$('.thriller').css({'color': 'white'});
+			$('.documentaries').css({'color': 'black'});
+              $('.horror').css({'color': 'black'});
+			$('.drama').css({'color': 'black'});
+			$('.adventure').css({'color': 'black'});
+			$('.action').css({'color': 'black'}); 
 			
+			 
         }
-        else if ($(document).scrollTop() < 760) {
-            $('#genres').css({'position': 'relative'});
-        }
+		   
+		   
+	});
+	$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 2000) {
+        $('#btn').fadeIn();
+    } else {
+        $('#btn').fadeOut();
+    }
+});
+	
+$(document).ready(function() {
+    $("#btn").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
     });
+
+});
+	
+	
 </script>	
 <script type="text/javascript">
     
@@ -120,25 +899,29 @@ function myFunction() {
 	
   </script>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script2.js"></script>
+    <script type="text/javascript" src="script3.js"></script>
+    <script>
+	   $(document).ready(function(){
+  $(".content-bar").click(function(){
+	$(".black-genres").addClass("black-image");			  
     
-  
+  });
+	 $(".close").click(function(){
+	$(".black-genres").removeClass("black-image");			  
+    
+  })
+	   });
+ $(document).ready(function(){
+  $(".search").click(function(){
+	$("#black-search").addClass("black-image2");			  
+    
+  });	
+	 $(".close2").click(function(){
+	$(".black-search").removeClass("black-image2");			  
+    
+  })	
+ }); 
 
-
-   
-	
-	
-       
-   
-	
-
-	
-	
-
-
-
-	
-
-	
-
-</body>
+	</script>	
 </html>
