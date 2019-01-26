@@ -592,11 +592,15 @@ height: 0.5rem;
 #center{
 	width: 90%;
 	height: auto;
+<<<<<<< HEAD
 
+=======
+	opacity: 0;
+>>>>>>> c0ced309a16e7d4b9049887bfe4bbafc3fcb5f02
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	opacity: 0;
+	
 	
 }
 .tabel1, .tabel2, .tabel3, .tabel4, .tabel5, .tabel6{
