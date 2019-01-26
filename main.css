@@ -12,9 +12,16 @@ body{
 	font-family: 'Ubuntu', sans-serif;
    overflow-x: hidden;
 }
+body button, i{
+	cursor: pointer;
+	outline: none;
+}
+body input, textarea{
+	outline: none;
+}
 #background{
 	width: 100%;
-	height: 800px;
+	
 	position: absolute;
     top: 0;
 	left: 0; 
@@ -33,11 +40,11 @@ body{
 	opacity: 1;
 }
 .image-iw{
-	width: 180px;
-	height: auto;
+	max-width: 150px;
+	height: 200px;
 	display: inline-block;
-	margin-right: 1.5rem;
-	margin-left: 1.5rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem; 
 	position: relative;
@@ -48,7 +55,8 @@ body{
 }
 .iw{
 	width: 100%;
-	height: 250px;
+	height: 100%;
+	 box-shadow: 0px 0px 10px #000000;
 	
 } 
 
@@ -133,8 +141,9 @@ body{
 	  position: absolute;
 	  top: 0;
 	  left: 0;
-	  background: hsla(0, 0%, 5%, 50%);
+	  background: hsla(0, 0%, 5%, 70%);
 	  z-index: 1;
+	  
 } 
 
 .title{
@@ -146,13 +155,31 @@ body{
 
 
 #slider{  
+	
 	opacity: 0;
+	height: 100%;
+	margin-top: 2rem;
+	
+	
     position: relative;
     z-index: 2;
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
+	
+	
     
+}
+.reviews3{
+	width: 100%;
+	height: auto;
+	background: hsla(48, 100%, 70%, 50%);
+	z-index: 2;
+	text-align: center;
+    color: hsl(0, 0%, 90%);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	text-shadow: 2px 2px  black;
 }
 
  .panel, .image {
@@ -165,14 +192,21 @@ body{
   
 }  
 
+.wrapper{
+	width: 100%;
+	position: relative;
+	
+}
 
-
+  
 .wrapper img{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	
+	
 }
 
 .bar{
@@ -224,7 +258,8 @@ height: 0.5rem;
 	width: 100%;
 	height: 4rem;
 	background: hsl(180, 100%, 30%);
-	font-family: 'Aleo', serif;
+	
+	text-shadow: 2px 2px  black;
 }
 .text{
 	float: left;
@@ -237,7 +272,7 @@ height: 0.5rem;
 	padding-bottom: 0.5rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-	
+	color: hsl(0, 0%, 90%);
 	
 }
 
@@ -246,9 +281,10 @@ height: 0.5rem;
 	width: 50%;
 	height: 100%;
 	
+	
 }
 .input{
-	
+	margin-top: 1rem;
 	float: right;
 	padding-right: 1rem;
 	padding-left: 0.5rem;
@@ -258,6 +294,14 @@ height: 0.5rem;
 .input input{
 	width: 14rem;
 	height: 1.5rem;
+	background: /*hsl(0, 0%, 100%)*/ hsla(0, 0%, 5%, 50%) ;
+	border: none;
+	 box-shadow: 0px 0px 10px #000000;
+	color: white;
+	outline: none;
+}
+.input i{
+	color: white;
 }
 .search-image{
 	width: 100%;
@@ -328,7 +372,7 @@ height: 0.5rem;
 }
 .left, .right{
 	position: absolute;
-	bottom: 99px;
+	bottom: 98px;
 	
 	height: 30px;
   width: 30px;
@@ -417,11 +461,11 @@ height: 0.5rem;
 .content-image{
 	width: 70%;
 	float: left;
-	
+	height: 100%;
 	
 }
 .content-image img{
-	width: 10rem;
+	width: 3rem;
 	height: 100%;
 }
 
@@ -453,7 +497,7 @@ height: 0.5rem;
 	
 } 
 
-.black-genres button{
+.black-genres input{
 	
 	background: transparent;
 	border: none;
@@ -464,6 +508,7 @@ height: 0.5rem;
 	display: block;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	font-size: 20px;
 	
 }
 
@@ -473,6 +518,15 @@ height: 0.5rem;
 	left: 50%;
 	 transform: translate(-50%, -50%);
 }
+/*.black-button input{
+	background: transparent;
+	border: none;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	
+} */
 
 .search-bar input{
 	background: transparent;
@@ -501,6 +555,9 @@ height: 0.5rem;
 	float: left;
 	
 }
+.movie{
+	padding-bottom: 1rem;
+}
 .movie2{
 	display: none;
 }
@@ -528,9 +585,9 @@ height: 0.5rem;
 #main{
 	width: 100%;
 	height: auto;
-	background: hsl(180, 100%, 30%);
+	background: hsl(180, 100%, 30%); 
 	padding-bottom: 2rem;
-	
+	opacity: 0;
 }
 #center{
 	width: 90%;
@@ -539,6 +596,7 @@ height: 0.5rem;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	
 	
 }
 .tabel1, .tabel2, .tabel3, .tabel4, .tabel5, .tabel6{
@@ -553,7 +611,7 @@ height: 0.5rem;
 .background-black{
 	width: 100%;
 	height: auto;
-	background: hsla(0, 0%, 5%, 50%);
+	background: hsla(0, 0%, 5%, 70%);
 }
 .adventure-movies, .action-movies, .drama-movies, .horror-movies, .documentaries-movies, .thriller-movies{
 	height: auto;
@@ -570,7 +628,7 @@ height: 0.5rem;
 	background-color: blue;
 	position: fixed;
 	bottom: 100px;
-	right: 15px;
+	right: 2px;
 	width: 2rem;
 	height: 2rem;
 	border: none;
@@ -798,6 +856,7 @@ height: 0.5rem;
 	background: /*hsl(0, 0%, 100%)*/ hsla(0, 0%, 5%, 50%) ;
 	border: none;
 	 box-shadow: 0px 0px 10px #000000;
+	color: white;
 }
 .part2 button, .part2-button2 button{
 	width: 15rem;
@@ -819,13 +878,13 @@ height: 0.5rem;
 	
 }
 
-.part3  ::placeholder{
+.part3 ::placeholder, .input ::placeholder{
 	color: white;
 }
- .part3  :-ms-input-placeholder{
+ .part3  :-ms-input-placeholder, .input  :-ms-input-placeholder{
 	color: white;
 }
- .part3  ::-ms-input-placeholder{
+ .part3  ::-ms-input-placeholder,  .input  ::-ms-input-placeholder {
 	color: white;
 }
 .part3{
@@ -876,14 +935,7 @@ height: 0.5rem;
 
 /* ========================================================media========================================*/
 @media(min-width: 600px){
-	#slider{
-		max-width: 600px;
-        height: 400px;
-	}
-	.wrapper{
-		max-width: 600px;
-    height: 400px;  
-	}
+	
 	#slider2{
 		display: block;
 	}
@@ -892,14 +944,8 @@ height: 0.5rem;
 	
 }
 @media(max-width: 600px){
-	#slider{
-		max-width: 300px;
-		height: 200px;
-	}
-	.wrapper{
-		max-width: 300px;
-		height: 200px;
-	}
+	
+	
 	#slider2{
 		display: none;
 	}
@@ -917,6 +963,7 @@ height: 0.5rem;
 		width: 45%;
 		padding-right: 1rem;
 	padding-left: 1rem;
+		
 	}
 	
 	.button-left{
@@ -945,22 +992,23 @@ height: 0.5rem;
 	
 }
 
-@media(max-width: 920px ){
+@media(min-width: 840px){
 .adventure-movies, .action-movies, .drama-movies, .horror-movies, .documentaries-movies, .thriller-movies{
-	max-width: 625px;
+	max-width: 800px;
+   
+	
+}
+}
+@media(max-width: 840px){
+	.adventure-movies, .action-movies, .drama-movies, .horror-movies, .documentaries-movies, .thriller-movies{
+	max-width: 600px;
+    
+	
+}
+	
+}
 
-	
-}
-}
-@media(min-width: 920px ){
-.adventure-movies, .action-movies, .drama-movies, .horror-movies, .documentaries-movies, .thriller-movies{
-	max-width: 1000px;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	
-	
-}
-}
+
 
 
 	
@@ -977,9 +1025,16 @@ height: 0.5rem;
 
 /*==============================================================header Mobile/Tablet================================================*/
 
-
 @media(max-width: 810px){
+	#slider{  
+	margin-top: 4rem;
+	width: 300px;
+	margin-bottom: 1rem;	
+	}
+	.wrapper{
+	height: 200px;
 	
+} 
 	#genres{
 	
 		display: none;
@@ -989,6 +1044,14 @@ height: 0.5rem;
 	}
 }
 @media(min-width: 810px){
+	#slider{  
+	
+	max-width: 600px;
+	}
+	.wrapper{
+	height: 400px;
+	
+}
 	#genres-top{
 		display: none;
 	}
@@ -1002,15 +1065,21 @@ height: 0.5rem;
 	
 }
 @media(min-width: 715px){
+	
+	#background{
+	width: 100%;
+	height: 1000px;
+	}
+	
 	#genres-top{
-		height: 7rem;
+		height: 3rem;
 	}
 	
 	.bar1, .bar2, .bar3{
-	 width: 60px;
-     height: 7px;
+	 width: 35px;
+     height: 4px;
     background-color: black;
-    margin: 15px 0px;
+    margin: 6px 0px;
 	margin-left: 0.5rem;
 	
 	
@@ -1028,8 +1097,8 @@ height: 0.5rem;
 		margin-top: -30px;
 	}
 	.search{
-		font-size: 50px;
-		padding-top: 1rem;
+		font-size: 25px;
+		padding-top: 0.5rem;
 	}
 	.search-bar input{
 	font-size: 40px;
@@ -1073,6 +1142,9 @@ height: 0.5rem;
 	.part2-button2{
 		display: none;
 	}
+	.bar-blue{
+		display: none;
+	}
 	
 	
 }
@@ -1097,11 +1169,11 @@ height: 0.5rem;
 	
 	
 }
-	.black-genres button{
+	.black-genres button {
 		font-size: 20px;
 		
 	}
-	.close, .close2{
+	.close, .close2 {
 		font-size: 55px;
 		margin-top: -10px;
 	}
@@ -1169,6 +1241,7 @@ height: 0.5rem;
 	}
 	.part2 button{
 		display: none;
+	
 	}
 	.part2-comment{
 		margin-bottom: 1rem;
@@ -1187,6 +1260,7 @@ height: 0.5rem;
 		 margin-right: auto;
 		margin-left: auto;
 		display: block;
+		
 	}
 	.part2-button2{
 		width: 100%;
@@ -1198,7 +1272,17 @@ height: 0.5rem;
 		display: block;
 	}
 	
+	#background{
+	width: 100%;
+	height: 350px;
 	
+	}
+	.bar-blue{
+		width: 100%;
+		height: 1rem;
+		background: hsl(180, 100%, 30%);
+		
+	}
 	
 	
 }
