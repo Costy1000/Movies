@@ -1,6 +1,7 @@
-
-var time = 10000;
 var bar = $('.progress-bar')
+ var time = 10000;
+
+
 
    
  
@@ -25,6 +26,7 @@ var bar = $('.progress-bar')
 
 	
  function run(){
+ 
  bar.width(0);
  setTimeout(showPane, 10000)
  bar.animate({'width': "+=100%"}, time, run);

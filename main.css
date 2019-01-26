@@ -646,34 +646,34 @@ height: 0.5rem;
 
 
 .tabel1{
-	background: url("assets/blur.png") no-repeat center;
+	background: url("assets/blur/blur.png") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 .tabel2{
-	background: url("assets/blur3.png") no-repeat center;
+	background: url("assets/blur/blur3.png") no-repeat center;
 	background-size: cover;	
     background-attachment: fixed;
 }
  
 .tabel3{
-	background: url("assets/blur4.png") no-repeat center;
+	background: url("assets/blur/blur4.png") no-repeat center;
 	background-size: cover;	
 	background-attachment: fixed;
 } 
 .tabel4{
-	background: url("assets/blur5.png") no-repeat center;
+	background: url("assets/blur/blur5.png") no-repeat center;
 	background-size: cover;	
 	background-attachment: fixed;
 }
 .tabel5{
-	background: url("assets/blur6.png") no-repeat center;
+	background: url("assets/blur/blur6.png") no-repeat center;
 	background-size: cover;	
 	background-attachment: fixed;
 }
 .tabel6{
-	background: url("assets/blur7.png") no-repeat center;
+	background: url("assets/blur/blur7.png") no-repeat center;
 	background-size: cover;	
 	background-attachment: fixed;
 }

@@ -11,7 +11,7 @@ function showImage(){
 	   
 	  if(nextImg.length == 0){
 		   var c = $('#header .image').first().animate({'opacity': '1'},2000).addClass("nothide")
-	  } }, 10000)
+	  } }, 15000)
 		}
 	
          showImage()
