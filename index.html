@@ -242,7 +242,7 @@
    </div>
 
    <div class="adventure-movies2">
-	  <img src="assets/Adventure/Infinity-War2.jpg" alt="iw" class="iw">
+	  <img src="assets/Adventure/Infinity-War2.jpg" alt="iw" >
 	  <img src="assets/Adventure/Aquaman.jpg" alt="Aquaman">
 	  <img src="assets/Adventure/Black-Panther.png" alt="Black-Panther">
 	  <img src="assets/Adventure/Ant-Man.jpg" alt="Ant-Man" class="wasp">
@@ -748,10 +748,11 @@
 	 var center = $("#center");
 	 var slider=  $("#slider");
 	 var slider2 = $("#slider2");
-	 
+	
 	 center.velocity("fadeIn", { duration: 2000, delay: 200} );
 	slider.velocity("fadeIn",  { duration: 2000, delay: 200},  );
 	slider2.velocity("fadeIn", { duration: 2000, delay: 200},  );
+	   
 </script>
 
 
@@ -807,9 +808,11 @@
 		
 		
 		  if ($(document).scrollTop() > $('.text').offset().top) {
-			  $('.adventure-movies img').addClass("opacity1")
+			 /* $('.adventure-movies img').addClass("opacity1")
 			   $('.black1').addClass("opacity1");
-			   $('.black1').css({display: 'block'})
+			   $('.black1').css({display: 'block'})*/
+			var image= $(".adventure-movies img")
+	        image.velocity({opacity: 1}, {duration: 3000}); 
 			 
 		  }
 		   if ($(document).scrollTop() > $('.lotr').offset().top)  {
