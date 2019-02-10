@@ -216,7 +216,7 @@ body input, textarea{
 .wrapper{
 	width: 100%;
 	position: relative;
-	
+	 box-shadow: 0px 0px 50px black;
 }
 
   
@@ -448,7 +448,10 @@ height: 0.5rem;
 	
 } 
 #genres, .wrapper-text, #genres-top{
-	background: hsl(300, 52%, 30%);
+	background: hsl(270, 100%, 55%);
+	background: linear-gradient(to right, hsl(300, 50%, 40%) 90%, hsl(240, 20%, 40%));
+
+
  
 
 
@@ -468,6 +471,7 @@ height: 0.5rem;
 	display: inline-block;
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
+	color: hsl(0, 0%, 70%);
 	
 }
 /*=========================================================================genres-top==============================================*/
@@ -623,6 +627,7 @@ height: 0.5rem;
 #main{
 	width: 100%;
 	height: auto;
+	background: hsl(270, 100%, 55%);
 	background: linear-gradient(to bottom right, hsl(300, 50%, 40%), hsl(240, 20%, 40%));
 	
 	border: 5px solid black;
@@ -911,7 +916,7 @@ height: 0.5rem;
 	width: 100%;
 	height: 100%;
 	background: hsla(0, 0%, 5%, 60%);
-	padding-bottom: 2rem;
+	
 }
 
 .part2 textarea{

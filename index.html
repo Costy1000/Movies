@@ -100,6 +100,7 @@
 	 </div>
 	 <div id="slider2">
 		<div class="wrapper-text">
+		 <div class="black-main">
 		  <div class="text"><h4>All reviews</h4></div>
 		   <div class="wrapper-bar">
 			  <div class="input">
@@ -127,6 +128,8 @@
 			  </div>   
 			  
 		  </div>
+			 
+		 </div>
 		</div>
 		<div class="wrapper2">
 		 
@@ -147,6 +150,7 @@
   </div>
 	</div> 
 <div id="genres">
+<div class="black-main">
   <div class="button-left">
 	<ul><li class="adventure">Adventure</li><li class="action">Action</li><li class="drama">Drama</li>
 	</ul>
@@ -157,6 +161,7 @@
 	<ul><li class="horror">Horror</li><li class="documentaries" >Documentaries</li><li class="thriller" >Thriller</li></ul>
 	
   </div>
+</div>
  </div> 
 <div id="main">
 <div class="bar-blue"></div>
@@ -787,11 +792,11 @@
 		   $('.movie2').css({'display': 'block'});
 			 $('.adventure').css({'color': 'white'});
 			$('.adventure-movies').css({'padding-top': '0px'}); 
-			$('.action').css({'color': 'black'});
-			$('.drama').css({'color': 'black'});
-			 $('.horror').css({'color': 'black'});
-				$('.documentaries').css({'color': 'black'}); 
-		    $('.thriller').css({'color': 'black'}); 
+			$('.action').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.drama').css({'color': 'hsl(0, 0%, 70%)'});
+			 $('.horror').css({'color': 'hsl(0, 0%, 70%)'});
+				$('.documentaries').css({'color': 'hsl(0, 0%, 70%)'}); 
+		    $('.thriller').css({'color': 'hsl(0, 0%, 70%)'}); 
 			}
 		
 		
@@ -801,7 +806,7 @@
 			 $('.movie').css({'display': 'block'});
 		   $('.movie2').css({'display': 'none'});  
             $('#genres').css({'position': 'static'}); 
-		     $('.adventure').css({'color': 'black'});
+		     $('.adventure').css({'color': 'hsl(0, 0%, 70%)'});
 			 
 			  						  
 		  }
@@ -855,49 +860,49 @@
 		 if ($(document).scrollTop()  > $('.action-movies').offset().top - 100) {
             
 			 $('.action').css({'color': 'white'});
-			$('.adventure').css({'color': 'black'});
-		$('.drama').css({'color': 'black'});
-		 $('.horror').css({'color': 'black'});	
-			$('.documentaries').css({'color': 'black'}); 	
-			$('.thriller').css({'color': 'black'}); 
+			$('.adventure').css({'color': 'hsl(0, 0%, 70%)'});
+		$('.drama').css({'color': 'hsl(0, 0%, 70%)'});
+		 $('.horror').css({'color': 'hsl(0, 0%, 70%)'});	
+			$('.documentaries').css({'color': 'hsl(0, 0%, 70%)'}); 	
+			$('.thriller').css({'color': 'hsl(0, 0%, 70%)'}); 
         }
 		if ($(document).scrollTop() > $('.drama-movies').offset().top - 100) {
             
 			 $('.drama').css({'color': 'white'});
-			$('.adventure').css({'color': 'black'});
-			$('.action').css({'color': 'black'});
-			  $('.horror').css({'color': 'black'});
-			  	$('.documentaries').css({'color': 'black'});
-			  $('.thriller').css({'color': 'black'});
+			$('.adventure').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.action').css({'color': 'hsl(0, 0%, 70%)'});
+			  $('.horror').css({'color': 'hsl(0, 0%, 70%)'});
+			  	$('.documentaries').css({'color': 'hsl(0, 0%, 70%)'});
+			  $('.thriller').css({'color': 'hsl(0, 0%, 70%)'});
 			  }
 		
 		 if ($(document).scrollTop()  > $('.horror-movies').offset().top - 100) {
 			 
               $('.horror').css({'color': 'white'});
-			 $('.drama').css({'color': 'black'});
-			$('.adventure').css({'color': 'black'});
-			$('.action').css({'color': 'black'});
-				$('.documentaries').css({'color': 'black'}); 
-			$('.thriller').css({'color': 'black'});
+			 $('.drama').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.adventure').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.action').css({'color': 'hsl(0, 0%, 70%)'});
+				$('.documentaries').css({'color': 'hsl(0, 0%, 70%)'}); 
+			$('.thriller').css({'color': 'hsl(0, 0%, 70%)'});
 			 
         }
 		if ($(document).scrollTop()  > $('.documentaries-movies').offset().top - 100) {
 			$('.documentaries').css({'color': 'white'});
 			 
-              $('.horror').css({'color': 'black'});
-			$('.drama').css({'color': 'black'});
-			$('.adventure').css({'color': 'black'});
-			$('.action').css({'color': 'black'}); 
-			$('.thriller').css({'color': 'black'});
+              $('.horror').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.drama').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.adventure').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.action').css({'color': 'hsl(0, 0%, 70%)'}); 
+			$('.thriller').css({'color': 'hsl(0, 0%, 70%)'});
 			 
         }
 		if ($(document).scrollTop()  > $('.thriller-movies').offset().top - 100) {
 			$('.thriller').css({'color': 'white'});
-			$('.documentaries').css({'color': 'black'});
-              $('.horror').css({'color': 'black'});
-			$('.drama').css({'color': 'black'});
-			$('.adventure').css({'color': 'black'});
-			$('.action').css({'color': 'black'}); 
+			$('.documentaries').css({'color': 'hsl(0, 0%, 70%)'});
+              $('.horror').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.drama').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.adventure').css({'color': 'hsl(0, 0%, 70%)'});
+			$('.action').css({'color': 'hsl(0, 0%, 70%)'}); 
 			
 			 
         } 
