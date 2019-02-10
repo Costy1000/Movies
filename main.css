@@ -216,7 +216,11 @@ body input, textarea{
 .wrapper{
 	width: 100%;
 	position: relative;
+<<<<<<< HEAD
 	 box-shadow: 0px 0px 50px black;
+=======
+	box-shadow: 0px 0px 50px black;
+>>>>>>> adc6b3e7ebabdedc7aa6c8cddae767601ed4bb22
 }
 
   
