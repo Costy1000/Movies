@@ -145,9 +145,6 @@
 	
   </div>
 	</div> 
- 
-<div id="main">
-<div class="bar-blue"></div>
 <div id="genres">
   <div class="button-left">
 	<ul><li class="adventure">Adventure</li><li class="action">Action</li><li class="drama">Drama</li>
@@ -159,7 +156,10 @@
 	<ul><li class="horror">Horror</li><li class="documentaries" >Documentaries</li><li class="thriller" >Thriller</li></ul>
 	
   </div>
- </div>
+ </div> 
+<div id="main">
+<div class="bar-blue"></div>
+<div class="black-main">
   
 <div id="center">
  <div class="tabel1">
@@ -720,6 +720,7 @@
 	<div class="part2-button2"><button>Send</button></div>
 	
  </div>
+</div>	
 </div>
 <div id="footer">
 	<p>&copy; MoviesReview.ro. All rights reserved</p>
@@ -749,9 +750,9 @@
 	 var slider=  $("#slider");
 	 var slider2 = $("#slider2");
 	
-	 center.velocity("fadeIn", { duration: 2000, delay: 200} );
-	slider.velocity("fadeIn",  { duration: 2000, delay: 200},  );
-	slider2.velocity("fadeIn", { duration: 2000, delay: 200},  );
+	 center.velocity("fadeIn", { duration: 2000, }, );
+	slider.velocity("fadeIn",  { duration: 2000, },  );
+	slider2.velocity("fadeIn", { duration: 2000, },  );
 	   
 </script>
 
@@ -812,7 +813,7 @@
 			   $('.black1').addClass("opacity1");
 			   $('.black1').css({display: 'block'})
 			var image= $(".adventure-movies img")
-	        image.velocity({opacity: 1}, {duration: 3000}); 
+	        image.velocity({opacity: 1}, {duration: 2000}); 
 			 
 		  }
 		  if ($(document).scrollTop() > $('.lotr').offset().top)  {

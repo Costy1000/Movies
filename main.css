@@ -269,7 +269,7 @@ height: 0.5rem;
 .wrapper-text{
 	width: 100%;
 	height: 4rem;
-	background: hsl(180, 100%, 30%);
+	
 	
 	text-shadow: 2px 2px  black;
 }
@@ -358,10 +358,10 @@ height: 0.5rem;
 }
 .wrapper2{
 	width: 100%;
-	height: 200px;
+	height: auto;
 	overflow: hidden;
-	/*background-color: hsla(30, 100%, 45%, 30%); */
-	background: hsla(120, 59%, 60%, 50%);
+	
+	background: /*hsla(120, 59%, 60%, 50%);*/ hsla(240, 20%, 60%, 40%);
      margin-bottom: 0px;
 	
 	
@@ -369,22 +369,26 @@ height: 0.5rem;
 .wrapper2 img{
 	max-width: 200px;
 	height: 200px;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
+	box-shadow: 0px 0px 10px #000000;
 	
 	
 }
+
 .item{
 	max-width: 200px;
-	height: 100%;
+	height: 200px;
 	display: inline-block;
 	outline: none;
+	
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	
 }
 .left, .right{
 	position: absolute;
-	bottom: 104px;
+	bottom: 98px;
 	
 	height: 30px;
   width: 30px;
@@ -403,7 +407,7 @@ height: 0.5rem;
 .prev, .next{
 	color: white;
 	position: absolute;
-	top: 68px;
+	top: 83px;
 	width: 40px;
 	height: 35px;
 	font-size: 25px;
@@ -426,11 +430,23 @@ height: 0.5rem;
 #genres{
 	width: 100%;
 	height: 7rem;
-	z-index: 10;
-	background: hsl(180, 100%, 30%);
+	z-index: 1;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+
+
 	
 	
 } 
+#genres, .wrapper-text, #genres-top{
+	background: hsl(300, 52%, 30%);
+ 
+
+
+
+ 
+	
+}
 
 
 
@@ -443,12 +459,13 @@ height: 0.5rem;
 	display: inline-block;
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
+	
 }
 /*=========================================================================genres-top==============================================*/
 
 #genres-top{
 	width: 100%;
-	background: hsl(180, 100%, 30%);
+	
 	
 	position: fixed;
 	top: 0;
@@ -597,8 +614,11 @@ height: 0.5rem;
 #main{
 	width: 100%;
 	height: auto;
-	background:  hsl(180, 100%, 30%); 
-	padding-bottom: 2rem;
+	background: linear-gradient(to bottom right, hsl(300, 50%, 40%), hsl(240, 20%, 40%));
+	
+	border: 5px solid black;
+	border-top: none;
+	z-index: -1;
 	
 }
 #center{
@@ -612,7 +632,7 @@ height: 0.5rem;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	
+	border: 5px solid  black ;
 	
 }
 .tabel1, .tabel2, .tabel3, .tabel4, .tabel5, .tabel6{
@@ -705,7 +725,7 @@ height: 0.5rem;
 	
 }
 .top{
-	animation: top 3s forwards;
+	animation: top 2s forwards;
 	
 }
 @-webkit-keyframes top{
@@ -878,6 +898,12 @@ height: 0.5rem;
 	
  
 } 
+.black-main{
+	width: 100%;
+	height: 100%;
+	background: hsla(0, 0%, 5%, 60%);
+	padding-bottom: 2rem;
+}
 
 .part2 textarea{
 	width: 100%;
@@ -1253,6 +1279,7 @@ height: 0.5rem;
 		display: inline-block;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
+		
 	}
 	.comments{
 		width: 300px;
@@ -1311,7 +1338,7 @@ height: 0.5rem;
 	.bar-blue{
 		width: 100%;
 		height: 1rem;
-		background: hsl(180, 100%, 30%);
+		background: linear-gradient(to right, hsl(240, 22%, 35%), hsl(240, 22%, 25%)) ;
 		
 	}
 	
@@ -1344,7 +1371,14 @@ height: 0.5rem;
 		opacity: 1;
 	}
 }
-
+@media(max-width: 350px){
+	.adventure-movies2 img, .action-movies2 img, .drama-movies2 img, .horror-movies2 img, .documentaries-movies2 img, .thriller-movies2 img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		
+	}
+}
 
 
 
